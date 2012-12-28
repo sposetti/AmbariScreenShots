@@ -8,7 +8,7 @@ Last Updated December 28, 2012
 Getting Started
 ----
 
-The Ambari API provides access to monitoring and metrics information of a Apache Hadoop cluster. This document is intended for developers who want to integrate with Ambari.
+The Ambari API provides access to monitoring and metrics information of a Apache Hadoop cluster. This document describes the resources used in the Ambari API and is intended for developers who want to integrate with Ambari.
 
 Authentication
 ----
