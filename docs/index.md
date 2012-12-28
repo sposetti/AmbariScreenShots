@@ -59,11 +59,56 @@ There are 2 types of resources in the Ambari API:
 Query Parameters
 ----
 
-This mechanism limits which data is returned by a query based on a predicate(s). Providing query parameters does not result in any link expansion in the data that is returned to the client although it may result in expansion on the server to apply predicates on sub-objects. Only applies to collection resources.
+This mechanism limits which data is returned by a query based on a predicate(s). Providing query parameters does not result in any link expansion in the data that is returned to the client although it may result in expansion on the server to apply predicates on sub-objects.
 
-*Query Operators*
+_Note: Only applies to collection resources. And all URLs must be properly URL encoded_
 
-*Example*
+**Query Operators**
+
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Example</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>=</td>
+    <td>name=host1</th>
+    <td>String or numerical equals</td>
+  </tr>
+  <tr>
+    <td>!=</td>
+    <td>host!=host1</th>
+    <td>String or numerical not equals</td>
+  </tr>
+  <tr>
+    <td>&lt;</td>
+    <td>disk_total&lt;50</th>
+    <td>Numerical less than</td>
+  </tr>
+  <tr>
+    <td>&gt;</td>
+    <td>disk_total&gt;50</th>
+    <td>Numerical greater than</td>
+  </tr>
+  <tr>
+    <td>&lt;=</td>
+    <td>disk_total&lt;=50</th>
+    <td>Numerical less than or equals</td>
+  </tr>
+  <tr>
+    <td>&gt;=</td>
+    <td>disk_total&gt;=50</th>
+    <td>Numerical greater than or equals</td>
+  </tr>
+  <tr>
+    <td>or</td>
+    <td>disk_total&gt;50 or disk_free&lt;100</th>
+    <td>Logial <code>or</code></td>
+  </tr>
+</table>
+
+**Example**
 
 Host query with query param (only return hosts where property1=foo)
 
@@ -88,7 +133,7 @@ Errors
 
 This section describes how errors are represented in a response.
 
-*Response*
+**Response**
 
     404 Not Found
     {
