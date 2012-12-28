@@ -24,17 +24,17 @@ Resources
 
 There are 2 types of resources in the Ambari Monitoring REST API.
 
-- **Collection Resource:** This resource type doesn’t refer to any specific resource; rather it refers to a collection of resources. For example:
+- **Collection Resource:** This resource type refers to a collection of resources, rather than any specific resource. For example:
 
         /clusters  
 
-  Returns a collection of clusters
+  _Returns a collection of clusters_
 
 - **Instance Resource:** This resource type refers to a single specific resource. For example:
 
         /clusters/cluster1
 
-  Refers to the cluster resource identified by the id “cluster1”
+  _Refers to the cluster resource identified by the id "cluster1"_
 
 <table>
   <tr>
