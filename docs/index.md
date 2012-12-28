@@ -3,7 +3,7 @@ Ambari API Reference v1
 
 Release Version
 ----
-Last Updated December 28, 2012
+_Last Updated December 28, 2012_
 
 Getting Started
 ----
