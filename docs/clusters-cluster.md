@@ -91,17 +91,17 @@ Returns information for the specified cluster identified by ":name"
       ],
     "hosts" : [
       {
-      "href" : "http://your.ambari.server/api/v1/clusters/MyIE9/hosts/ip-10-36-113-130.ec2.internal",
+      "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/hosts/some.cluster.host",
       "Hosts" : {
-        "cluster_name" : "MyIE9",
-        "host_name" : "ip-10-36-113-130.ec2.internal"
+        "cluster_name" : "MyCluster",
+        "host_name" : "some.cluster.host"
         }
       },
       {
-      "href" : "http://your.ambari.server/api/v1/clusters/MyIE9/hosts/ip-10-114-98-119.ec2.internal",
+      "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/hosts/another.cluster.host",
       "Hosts" : {
-        "cluster_name" : "MyIE9",
-        "host_name" : "ip-10-114-98-119.ec2.internal"
+        "cluster_name" : "MyCluster",
+        "host_name" : "another.cluster.host"
         }
       } ]
     }
