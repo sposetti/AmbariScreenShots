@@ -87,8 +87,7 @@ Returns information for the specified cluster identified by ":name"
           "cluster_name" : "MyCluster",
           "service_name" : "OOZIE"
           }
-        }
-      ],
+        } ],
     "hosts" : [
       {
       "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/hosts/some.cluster.host",
