@@ -1,7 +1,7 @@
 View Host Component Information
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Returns information for a specific role on the given host.
 
