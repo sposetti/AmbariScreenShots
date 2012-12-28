@@ -1,23 +1,19 @@
 Ambari API Reference v1
 =========
 
+The Ambari API provides access to monitoring and metrics information of a Apache Hadoop cluster. This document describes the resources used in the Ambari API and is intended for developers who want to integrate with Ambari.
+
 - [Release Version](#release-version)
-- [Getting Started](getting-started)
-- [Authentication](authentication)
-- [Resources](resources)
-- [Partial Response](partial-response)
-- [Query Parameters](query-parameters)
+- [Authentication](#authentication)
+- [Resources](#resources)
+- [Partial Response](#partial-response)
+- [Query Parameters](#query-parameters)
 - [Errors](#errors)
 
 
 Release Version
 ----
 _Last Updated December 28, 2012_
-
-Getting Started
-----
-
-The Ambari API provides access to monitoring and metrics information of a Apache Hadoop cluster. This document describes the resources used in the Ambari API and is intended for developers who want to integrate with Ambari.
 
 Authentication
 ----
