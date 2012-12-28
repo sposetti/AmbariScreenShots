@@ -1,7 +1,7 @@
 View Service Information
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Refers to a specific service identified by ":serviceName" for a given cluster.
 
