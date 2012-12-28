@@ -50,39 +50,11 @@ There are 2 types of resources in the Ambari API:
 
 ### Hosts
 
+- [List hosts](hosts.md)
+- [View host information](hosts-host.md)
+- [List host components](host-components.md)
+- [View host component information](host-component.md)
 
-<table>
-  <tr>
-    <td>
-<code>/clusters/:name/hosts</code>
-    </td>
-    <td>
-Returns a collection of all hosts in a given cluster.
-    </td>
-  </tr>
-  <tr>
-    <td>
-<code>/clusters/:name/hosts/:hostName</code>
-    </td>
-    <td>
-Returns information about a single host in a given cluster.
 
-  <tr>
-    <td>
-<code>/clusters/:name/hosts/:hostName/host_components</code>
-    </td>
-    <td>
-Returns a collection of components running on a given host.
-    </td>
-  </tr>
-  <tr>
-    <td>
-<code>/clusters/:name/hosts/:hostName/host_components/:componentName</code>
-    </td>
-    <td>
-Returns information for a specific role on the given host.
-    </td>
-  </tr>
-</table>
 
 
