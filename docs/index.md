@@ -22,4 +22,90 @@ _Note: The authentication method and source is configured at the Ambari Server. 
 Resources
 ----
 
-Test
+<table>
+  <tr>
+    <th>Resources</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>
+<code>/clusters</code>
+    </td>
+    <td>
+Returns a collection of the currently configured clusters.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name
+    </td>
+    <td>
+Returns information for a specific cluster.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name/services
+    </td>
+    <td>
+Returns a collection of the services in a given cluster.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name/services/:serviceName
+    </td>
+    <td>
+Returns information for a specific service in a given cluster.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name/services/:serviceName/components
+    </td>
+    <td>
+Returns a collection of all components for the given service.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name/services/:serviceName/components/:componentName
+    </td>
+    <td>
+Returns information for a specific component in a given service.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name/hosts
+    </td>
+    <td>
+Returns a collection of all hosts in a given cluster.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name/hosts/:hostName
+    </td>
+    <td>
+Returns information about a single host in a given cluster.
+
+  <tr>
+    <td>
+/clusters/:name/hosts/:hostName/host_components
+    </td>
+    <td>
+Returns a collection of components running on a given host.
+    </td>
+  </tr>
+  <tr>
+    <td>
+/clusters/:name/hosts/:hostName/host_components/:componentName
+    </td>
+    <td>
+Returns information for a specific role on the given host.
+    </td>
+  </tr>
+</table>
+
+
