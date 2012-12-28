@@ -1,7 +1,7 @@
 List Host Components
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Returns a collection of components running on a given host.
 
