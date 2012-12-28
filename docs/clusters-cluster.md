@@ -1,7 +1,7 @@
 View Cluster Information
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Returns information for the specified cluster identified by ":name"
 
