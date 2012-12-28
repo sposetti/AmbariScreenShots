@@ -1,7 +1,7 @@
 List Clusters
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Returns a collection of the currently configured clusters.
 
