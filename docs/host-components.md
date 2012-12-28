@@ -1,9 +1,13 @@
+List Host Components
+=====
 
-  <tr>
-    <td>
-<code>/clusters/:name/hosts/:hostName/host_components</code>
-    </td>
-    <td>
+[Back to Index](index.md)
+
 Returns a collection of components running on a given host.
-    </td>
-  </tr>
+
+    GET /clusters/:name/hosts/:hostName/host_components
+
+**Response**
+
+    200 OK
+
