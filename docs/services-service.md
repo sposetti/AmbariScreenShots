@@ -1,4 +1,16 @@
-  <tr>
+List Services
+=====
+
+[Back to Index](index.md)
+
+Returns a collection of the services in a given cluster.
+
+    GET /clusters/:name/services
+
+**Response**
+
+
+<tr>
     <td>
 <code>/clusters/:name/services/:serviceName</code>
     </td>
