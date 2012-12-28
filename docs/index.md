@@ -26,13 +26,13 @@ There are 2 types of resources in the Ambari Monitoring REST API.
 
 - **Collection Resource:** This resource type doesn’t refer to any specific resource; rather it refers to a collection of resources. For example:
 
-      /clusters  
+        /clusters  
 
   Returns a collection of clusters
 
 - **Instance Resource:** This resource type refers to a single specific resource. For example:
 
-      /clusters/cluster1
+        /clusters/cluster1
 
   Refers to the cluster resource identified by the id “cluster1”
 
@@ -51,7 +51,7 @@ Returns a collection of the currently configured clusters.
   </tr>
   <tr>
     <td>
-/clusters/:name
+<code>/clusters/:name</code>
     </td>
     <td>
 Returns information for a specific cluster.
@@ -59,7 +59,7 @@ Returns information for a specific cluster.
   </tr>
   <tr>
     <td>
-/clusters/:name/services
+<code>/clusters/:name/services</code>
     </td>
     <td>
 Returns a collection of the services in a given cluster.
@@ -67,7 +67,7 @@ Returns a collection of the services in a given cluster.
   </tr>
   <tr>
     <td>
-/clusters/:name/services/:serviceName
+<code>/clusters/:name/services/:serviceName</code>
     </td>
     <td>
 Returns information for a specific service in a given cluster.
@@ -75,7 +75,7 @@ Returns information for a specific service in a given cluster.
   </tr>
   <tr>
     <td>
-/clusters/:name/services/:serviceName/components
+<code>/clusters/:name/services/:serviceName/components</code>
     </td>
     <td>
 Returns a collection of all components for the given service.
@@ -83,7 +83,7 @@ Returns a collection of all components for the given service.
   </tr>
   <tr>
     <td>
-/clusters/:name/services/:serviceName/components/:componentName
+<code>/clusters/:name/services/:serviceName/components/:componentName</code>
     </td>
     <td>
 Returns information for a specific component in a given service.
@@ -91,7 +91,7 @@ Returns information for a specific component in a given service.
   </tr>
   <tr>
     <td>
-/clusters/:name/hosts
+<code>/clusters/:name/hosts</code>
     </td>
     <td>
 Returns a collection of all hosts in a given cluster.
@@ -99,14 +99,14 @@ Returns a collection of all hosts in a given cluster.
   </tr>
   <tr>
     <td>
-/clusters/:name/hosts/:hostName
+<code>/clusters/:name/hosts/:hostName</code>
     </td>
     <td>
 Returns information about a single host in a given cluster.
 
   <tr>
     <td>
-/clusters/:name/hosts/:hostName/host_components
+<code>/clusters/:name/hosts/:hostName/host_components</code>
     </td>
     <td>
 Returns a collection of components running on a given host.
@@ -114,7 +114,7 @@ Returns a collection of components running on a given host.
   </tr>
   <tr>
     <td>
-/clusters/:name/hosts/:hostName/host_components/:componentName
+<code>/clusters/:name/hosts/:hostName/host_components/:componentName</code>
     </td>
     <td>
 Returns information for a specific role on the given host.
