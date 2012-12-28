@@ -55,6 +55,26 @@ There are 2 types of resources in the Ambari API:
 - [List host components](host-components.md)
 - [View host component information](host-component.md)
 
+Partial Response
+----
+
+A mechanism used to control which fields are returned by a query.  Partial response can be used to restrict which fields are returned and additionally, it allows a query to reach down and return data from sub-resources.  The keyword “fields” is used to specify a partial response.  Only the fields listed will be returned to the client.  To specify sub-elements, use the notation “a/b/c”.  The wildcard ‘*’ can be used to show all fields for a resource.  This can be combined to provide ‘expand’ functionality for sub-components.  Some fields are always returned for a resource regardless of the specified partial response fields.  These fields are the fields which uniquely identify the resource.  This would be the primary id field of the resource and the foreign keys to the primary id fields of all ancestors of the resource.
+
+**Example: Partial Response (Name and All metrics)*
+
+    GET    /api/v1/clusters/MyCluster/services/HDFS/components/NAMENODE?fields=name,metrics
+
+
+    200 OK
+    {
+      “href” :”.../api/v1/clusters/MyCluster/services/HDFS/components/NAMENODE?fields=name,metrics”,
+      “name”: “NAMENODE”,
+      “metrics”: [
+        {
+        ...
+        }
+      ]
+    }
 
 Query Parameters
 ----
@@ -104,27 +124,13 @@ _Note: Only applies to collection resources. And all URLs must be properly URL e
   <tr>
     <td>or</td>
     <td>disk_total&gt;50 or disk_free&lt;100</th>
-    <td>Logial <code>or</code></td>
+    <td>Logial 'or'</td>
   </tr>
 </table>
 
-**Example: Get all hosts with less than 2 "cpu" or less than 100 "disk_total"**
+**Example: Get all hosts with less than 100 "disk_total"**
 
-    GET  /api/v1/clusters/c1/hosts?cpu/count<2 or metrics/disk/disk_total<100
-
-    200 OK
-    {
-      “href” : “.../api/v1/clusters/MyCluster/hosts?property1=foo”,
-      “items”: [
-        {
-            “href”: “.../api/v1/clusters/MyCluster/hosts/host1”
-        },
-        {
-            “href”: ".../api/v1/clusters/MyCluster/hosts/host3”
-        }
-        ...
-      ]
-    }
+    GET  /api/v1/clusters/c1/hosts?metrics/disk/disk_total<100
 
 Errors
 ----
