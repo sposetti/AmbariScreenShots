@@ -36,53 +36,22 @@ There are 2 types of resources in the Ambari API:
 
   _Refers to the cluster resource identified by the id "cluster1"_
 
-Clusters
-----
+### Clusters
 
 - [List clusters](clusters.md)
 - [View cluster information](clusters-cluster.md)
 
-Services
-----
+### Services
 
+- [List services](services.md)
+- [View service information](services-service.md)
+- [View service components](components.md)
+- [View component information](components-component.md)
 
-Hosts
-----
+### Hosts
 
 
 <table>
-  <tr>
-    <td>
-<code>/clusters/:name/services</code>
-    </td>
-    <td>
-Returns a collection of the services in a given cluster.
-    </td>
-  </tr>
-  <tr>
-    <td>
-<code>/clusters/:name/services/:serviceName</code>
-    </td>
-    <td>
-Returns information for a specific service in a given cluster.
-    </td>
-  </tr>
-  <tr>
-    <td>
-<code>/clusters/:name/services/:serviceName/components</code>
-    </td>
-    <td>
-Returns a collection of all components for the given service.
-    </td>
-  </tr>
-  <tr>
-    <td>
-<code>/clusters/:name/services/:serviceName/components/:componentName</code>
-    </td>
-    <td>
-Returns information for a specific component in a given service.
-    </td>
-  </tr>
   <tr>
     <td>
 <code>/clusters/:name/hosts</code>
