@@ -11,36 +11,36 @@ Refers to a collection of all components for a given service.
 
     200 OK
     {
-    "href" : "http://ec2-50-17-38-137.compute-1.amazonaws.com:8080/api/v1/clusters/MyIE9/services/HDFS/components",
+    "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/services/HDFS/components",
     "items" : [
       {
-      "href" : "http://ec2-50-17-38-137.compute-1.amazonaws.com:8080/api/v1/clusters/MyIE9/services/HDFS/components/DATANODE",
+      "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/services/HDFS/components/DATANODE",
       "ServiceComponentInfo" : {
-        "cluster_name" : "MyIE9",
+        "cluster_name" : "MyCluster",
         "component_name" : "DATANODE",
         "service_name" : "HDFS"
         }
       },
       {
-      "href" : "http://ec2-50-17-38-137.compute-1.amazonaws.com:8080/api/v1/clusters/MyIE9/services/HDFS/components/SECONDARY_NAMENODE",
+      "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/services/HDFS/components/SECONDARY_NAMENODE",
       "ServiceComponentInfo" : {
-        "cluster_name" : "MyIE9",
+        "cluster_name" : "MyCluster",
         "component_name" : "SECONDARY_NAMENODE",
         "service_name" : "HDFS"
         }
       },
       {
-      "href" : "http://ec2-50-17-38-137.compute-1.amazonaws.com:8080/api/v1/clusters/MyIE9/services/HDFS/components/NAMENODE",
+      "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/services/HDFS/components/NAMENODE",
       "ServiceComponentInfo" : {
-        "cluster_name" : "MyIE9",
+        "cluster_name" : "MyCluster",
         "component_name" : "NAMENODE",
         "service_name" : "HDFS"
         }
       },
       {
-      "href" : "http://ec2-50-17-38-137.compute-1.amazonaws.com:8080/api/v1/clusters/MyIE9/services/HDFS/components/HDFS_CLIENT",
+      "href" : "http://your.ambari.server/api/v1/clusters/MyCluster/services/HDFS/components/HDFS_CLIENT",
       "ServiceComponentInfo" : {
-        "cluster_name" : "MyIE9",
+        "cluster_name" : "MyCluster",
         "component_name" : "HDFS_CLIENT",
         "service_name" : "HDFS"
         }
