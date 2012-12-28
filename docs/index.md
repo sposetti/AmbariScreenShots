@@ -56,5 +56,46 @@ There are 2 types of resources in the Ambari API:
 - [View host component information](host-component.md)
 
 
+Query Parameters
+----
 
+This mechanism limits which data is returned by a query based on a predicate(s). Providing query parameters does not result in any link expansion in the data that is returned to the client although it may result in expansion on the server to apply predicates on sub-objects. Only applies to collection resources.
+
+*Query Operators*
+
+*Example*
+
+Host query with query param (only return hosts where property1=foo)
+
+    GET    /api/v1/clusters/MyCluster/hosts?property1=foo
+
+    200 OK
+    {
+      “href” : “.../api/v1/clusters/MyCluster/hosts?property1=foo”,
+      “items”: [
+        {
+            “href”: “.../api/v1/clusters/MyCluster/hosts/host1”
+        },
+        {
+            “href”: ".../api/v1/clusters/MyCluster/hosts/host3”
+        }
+        ...
+      ]
+    }
+
+Errors
+----
+
+This section describes how errors are represented in a response.
+
+*Response*
+
+    404 Not Found
+    {
+      “status”: 404,
+      “message”: “standard message”,
+      “developerMessage”: “verbose developers message”,
+      “code”: 1234,
+      “moreInfo”, “...”
+    }
 
