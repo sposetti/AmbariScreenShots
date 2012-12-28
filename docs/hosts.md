@@ -1,7 +1,7 @@
 List Hosts
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Returns a collection of all hosts in a given cluster.
 
