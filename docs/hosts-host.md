@@ -1,7 +1,7 @@
 View Host Information
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Returns information about a single host in a given cluster.
 
