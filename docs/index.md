@@ -108,11 +108,9 @@ _Note: Only applies to collection resources. And all URLs must be properly URL e
   </tr>
 </table>
 
-**Example**
+**Example: Get all hosts with less than 2 "cpu" or less than 100 "disk_total"**
 
-Host query with query param (only return hosts where property1=foo)
-
-    GET    /api/v1/clusters/MyCluster/hosts?property1=foo
+    GET  /api/v1/clusters/c1/hosts?cpu/count<2 or metrics/disk/disk_total<100
 
     200 OK
     {
