@@ -1,7 +1,7 @@
 View Service Components
 =====
 
-[Back to Index](index.md)
+[Back to Resources](index.md#resources)
 
 Refers to a collection of all components for a given service.
 
