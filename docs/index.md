@@ -32,9 +32,9 @@ There are 2 types of resources in the Ambari API:
 
 - **Instance Resource:** This resource type refers to a single specific resource. For example:
 
-        /clusters/cluster1
+        /clusters/MyCluster
 
-  _Refers to the cluster resource identified by the id "cluster1"_
+  _Refers to the cluster resource identified by the id "MyCluster"_
 
 ### Clusters
 
