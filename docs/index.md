@@ -22,7 +22,7 @@ _Note: The authentication method and source is configured at the Ambari Server. 
 Resources
 ----
 
-There are 2 types of resources in the Ambari Monitoring REST API.
+There are 2 types of resources in the Ambari API:
 
 - **Collection Resource:** This resource type refers to a collection of resources, rather than any specific resource. For example:
 
@@ -35,6 +35,10 @@ There are 2 types of resources in the Ambari Monitoring REST API.
         /clusters/cluster1
 
   _Refers to the cluster resource identified by the id "cluster1"_
+
+
+- [List clusters](clusters.md)
+- View cluster information
 
 <table>
   <tr>
