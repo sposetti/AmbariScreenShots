@@ -1,13 +1,13 @@
 Ambari API Reference v1
 =========
 
-- [Release Version](release-version)
+- [Release Version][release-version]
 - [Getting Started](getting-started)
 - [Authentication](authentication)
 - [Resources](resources)
 - [Partial Response](partial-response)
 - [Query Parameters](query-parameters)
-- [Errors](errors)
+- [Errors][errors]
 
 
 Release Version
