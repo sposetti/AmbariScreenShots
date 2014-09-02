@@ -7,6 +7,7 @@ Follow the instructions here to ease frontend development for the Admin View (am
 2. Follow the "Frontend Development" section in Quick Start Guide to check out the Ambari source using git. This makes the entire Ambari source available via /vagrant/ambari from the Vagrant VM.
 3. From the Ambari Server host:
     cd /var/lib/ambari-server/resources/views/work
+> Note: If this directory does not exist, you have not started ambari-server; run "ambari-server start" to start it
 4. Move the existing Admin View working directory to tmp:
     mv ADMIN_VIEW\{1.0.0\} /tmp
 5. Create a symbolic link to your 
