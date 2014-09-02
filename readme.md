@@ -3,7 +3,7 @@ Ambari Admin View
 
 Follow the instructions here to ease frontend development for the Admin View (`ambari-admin` module)
 
-1. Follow the Quick Start Guide to install and start Ambari Server (cluster need not be deployed).
+1. Follow the [Quick Start Guide](https://cwiki.apache.org/confluence/display/AMBARI/Quick+Start+Guide) to install and start Ambari Server (cluster need not be deployed).
 2. Follow the "Frontend Development" section in Quick Start Guide to check out the Ambari source using git. This makes the entire Ambari source available via /vagrant/ambari from the Vagrant VM.
 3. From the Ambari Server host:
     cd /var/lib/ambari-server/resources/views/work
